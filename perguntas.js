@@ -1,173 +1,201 @@
 export const perguntas = [
+
     {
-        enunciado: "Assim que saiu da escola você se depara com uma nova tecnologia, um chat que consegue responder todas as dúvidas que uma pessoa pode ter, ele também gera imagens e áudios hiper-realistas. Qual o primeiro pensamento?",
+        enunciado:
+            "Imagine que você pudesse voltar aos primeiros anos dos videogames. Ao encontrar um jogo com gráficos simples, poucos sons e um mundo construído com pixels, qual seria sua reação?",
+
         alternativas: [
+
             {
-                texto: "Isso é assustador!",
+                texto: "Ficaria impressionado com o que era possível fazer naquela época.",
                 afirmacao: [
-                    "No início ficou com medo do que essa tecnologia pode fazer.",
-                    "Achou assustador pensar na velocidade na qual a tecnologia está avançando."
-                ],
-                proxima: 1,
+                    "Você percebeu que grandes experiências não dependem necessariamente de gráficos realistas.",
+                    "Os primeiros jogos mostraram que criatividade e tecnologia podem caminhar juntas."
+                ]
             },
+
             {
-                texto: "Isso é maravilhoso!",
+                texto: "Sentiria falta dos gráficos e recursos dos jogos atuais.",
                 afirmacao: [
-                    "Quis saber como usar IA no seu dia a dia.",
-                    "Pensou que IA pode ajudar em tarefas da sua vida."
-                ],
-                proxima: 2,
-            },
+                    "Você percebeu o quanto a tecnologia dos videogames mudou ao longo das décadas.",
+                    "Mesmo simples, aqueles primeiros jogos foram responsáveis por construir a base da indústria."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Utilizar uma IA pode ser aterrorizante mesmo, e foi pensando nisso que uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado:
+            "Em 1986, The Legend of Zelda chegou ao Nintendo Entertainment System e apresentou uma grande aventura vista de cima. Se você estivesse conhecendo o jogo naquela época, o que mais chamaria sua atenção?",
+
         alternativas: [
+
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "A liberdade para explorar e descobrir caminhos.",
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis.",
-                    "Percebeu que a IA pode ajudar a encontrar informações úteis na internet de forma mais rápida e direcionada.",
-                    "Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos."
-                ],
-                proxima: 3,
+                    "Você percebeu que a exploração já era uma parte importante da experiência.",
+                    "A possibilidade de descobrir segredos por conta própria tornou a aventura mais envolvente."
+                ]
             },
+
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "A quantidade de elementos que cabiam em um jogo relativamente simples.",
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho.",
-                    "Achou que era muito mais fácil procurar por respostas utilizando alguns meios mais tradicionais mesmo que levasse mais tempo.",
-                    "Sentiu um pouco de medo de quais dados pessoais seus a IA poderia utilizar e por isso prefere fazer suas coisas com pouca intromissão da tecnologia."
-                ],
-                proxima: 4,
-            },
+                    "Você ficou impressionado com a criatividade usada para aproveitar as limitações técnicas.",
+                    "Mesmo com recursos limitados, os desenvolvedores encontraram maneiras de criar um mundo cheio de possibilidades."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Um chat com IA pode ser uma boa alternativa para realizar tarefas do dia a dia e foi pensando nisso que uma professora de tecnologia da escola decidiu fazer uma sequência de aulas sobre esta tecnologia. No fim de uma aula ela pede que você escreva um trabalho sobre o uso de IA em sala de aula. Qual atitude você toma?",
+        enunciado:
+            "Agora avançamos para 1998. The Legend of Zelda: Ocarina of Time leva a série para um mundo tridimensional. Qual mudança você considera mais importante?",
+
         alternativas: [
+
             {
-                texto: "Utiliza uma ferramenta de busca na internet que utiliza IA para que ela ajude a encontrar informações relevantes para o trabalho e explique numa linguagem que facilite o entendimento.",
+                texto: "A possibilidade de explorar um mundo em três dimensões.",
                 afirmacao: [
-                    "Conseguiu utilizar a IA para buscar informações úteis.",
-                    "Percebeu que a IA pode ajudar a encontrar informações úteis na internet de forma mais rápida e direcionada.",
-                    "Percebeu que a IA consegue explicar termos complicados de forma simplificada e isso ajudou muito suas pesquisas sobre assuntos complexos."
-                ],
-                proxima: 3,
+                    "A chegada da terceira dimensão mudou profundamente a forma como os jogadores enxergavam os mundos virtuais.",
+                    "Ocarina of Time mostrou como uma franquia poderia se reinventar ao mudar de perspectiva."
+                ]
             },
+
             {
-                texto: "Escreve o trabalho com base nas conversas que teve com colegas, algumas pesquisas na internet e conhecimentos próprios sobre o tema.",
+                texto: "A nova maneira de controlar e interagir com o ambiente.",
                 afirmacao: [
-                    "Sentiu mais facilidade em utilizar seus próprios recursos para escrever seu trabalho.",
-                    "Achou que era muito mais fácil procurar por respostas utilizando alguns meios mais tradicionais mesmo que levasse mais tempo.",
-                    "Sentiu um pouco de medo de quais dados pessoais seus a IA poderia utilizar e por isso prefere fazer suas coisas com pouca intromissão da tecnologia."
-                ],
-                proxima: 4,
-            },
+                    "Você percebeu que a evolução não aconteceu apenas nos gráficos.",
+                    "Controles e mecânicas também precisaram evoluir para acompanhar a chegada dos mundos tridimensionais."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Ferramentas de busca que utilizam IA podem facilitar muito nosso processo de busca por informações. Agora imagine que você precisa participar de um debate sobre o quanto a IA impacta no trabalho do futuro. Qual posicionamento tomar?",
+        enunciado:
+            "Com o passar dos anos, os jogos começaram a apresentar mundos cada vez maiores. Em títulos como Twilight Princess e outros jogos da geração seguinte, os cenários ganharam mais detalhes. O que essa evolução representa para você?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Mais detalhes ajudam a criar uma atmosfera mais envolvente.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
-                ],
-                proxima: 5,
+                    "Você valoriza a capacidade dos jogos de criar ambientes cada vez mais imersivos.",
+                    "A evolução visual passou a contribuir diretamente para a maneira como os jogadores experimentam uma história."
+                ]
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "O mais importante continua sendo a jogabilidade.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
-                ],
-                proxima: 6,
-            },
+                    "Você entende que gráficos impressionantes não substituem uma boa experiência de jogo.",
+                    "A tecnologia pode evoluir, mas diversão, criatividade e boas mecânicas continuam sendo fundamentais."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Utilizar informações próprias traz um toque pessoal ao nosso trabalho. Agora imagine que você precisa participar de um debate sobre o quanto a IA impacta no trabalho do futuro. Qual posicionamento tomar?",
+        enunciado:
+            "Em 2017, The Legend of Zelda: Breath of the Wild apresentou um enorme mundo aberto e permitiu que os jogadores explorassem Hyrule de maneiras diferentes. O que mais representa essa mudança?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "A liberdade para decidir para onde ir e como explorar.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
-                ],
-                proxima: 5,
+                    "Você valoriza a liberdade oferecida pelos mundos abertos.",
+                    "Os jogos passaram a permitir que diferentes jogadores tivessem experiências bastante diferentes dentro do mesmo mundo."
+                ]
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "A interação entre o jogador e o ambiente.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
-                ],
-                proxima: 6,
-            },
+                    "Você percebeu que a evolução dos jogos também envolve sistemas que permitem interações mais complexas.",
+                    "O cenário deixou de ser apenas um lugar para atravessar e passou a fazer parte das estratégias do jogador."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Novas tecnologias trazem novos desafios, por isso após a elaboração do trabalho escrito, a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado:
+            "Em 2023, Tears of the Kingdom expandiu ainda mais as possibilidades de exploração e criação em Hyrule. Se você pudesse experimentar uma dessas novas possibilidades, qual escolheria?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Criar veículos e ferramentas para explorar o mundo.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
-                ],
-                proxima: 7,
+                    "Você gosta da ideia de transformar o jogador em parte do processo criativo.",
+                    "A tecnologia permite que os jogos ofereçam sistemas capazes de produzir soluções que nem sempre foram planejadas de uma única maneira."
+                ]
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Explorar lugares que antes pareciam impossíveis de alcançar.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
-                ],
-                proxima: 7,
-            },
+                    "Você prefere descobrir os limites de um mundo virtual.",
+                    "A exploração continua sendo uma das características que acompanham Zelda desde seus primeiros jogos."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "É muito importante refletir sobre os trabalhadores do futuro. Por isso a professora realizou um debate entre a turma para entender como foi realizada a pesquisa e escrita. Nessa conversa também foi levantado um ponto muito importante: como a IA impacta o trabalho do futuro. Nesse debate, como você se posiciona?",
+        enunciado:
+            "Depois de observar décadas de evolução, surge uma pergunta: até onde os videogames podem chegar? Qual possibilidade para o futuro dos jogos mais desperta sua curiosidade?",
+
         alternativas: [
+
             {
-                texto: "Defende a ideia de que a IA pode criar novas oportunidades de emprego e melhorar habilidades humanas.",
+                texto: "Mundos virtuais ainda maiores e mais detalhados.",
                 afirmacao: [
-                    "Vem impulsionando a inovação na área de IA e luta para abrir novos caminhos profissionais com IA.",
-                    "Participa ativamente do desenvolvimento de soluções criativas e na melhoria de processos em IA."
-                ],
-                proxima: 7,
+                    "Você imagina um futuro em que os mundos digitais serão ainda mais complexos e imersivos.",
+                    "Para você, a evolução gráfica e tecnológica ainda tem muito espaço para avançar."
+                ]
             },
+
             {
-                texto: "Me preocupo com as pessoas que perderão seus empregos para máquinas e defendem a importância de proteger os trabalhadores.",
+                texto: "Novas formas de jogar que ainda nem conseguimos imaginar.",
                 afirmacao: [
-                    "Sua preocupação com as pessoas motivou a criar um grupo de estudos entre trabalhadores para discutir meios de utilização de IA de forma ética.",
-                    "Criou grupos de ética voltado para IA e busca ativamente reduzir as desigualdades geradas pela automação."
-                ],
-                proxima: 7,
-            },
+                    "Você acredita que a próxima grande evolução pode estar em novas maneiras de interagir com os jogos.",
+                    "A história dos videogames mostra que muitas das tecnologias atuais pareciam improváveis no passado."
+                ]
+            }
+
         ]
     },
+
     {
-        enunciado: "Ao final da discussão, você precisou criar uma imagem no computador que representasse o que pensa sobre IA. E agora?",
+        enunciado:
+            "Depois dessa viagem pela história dos games, qual característica você considera mais importante para que um jogo continue marcante mesmo depois de muitos anos?",
+
         alternativas: [
+
             {
-                texto: "Criar uma imagem utilizando uma plataforma de design como o Paint.",
+                texto: "Criatividade e capacidade de inovar.",
                 afirmacao: [
-                    "Notou também que muitas pessoas não sabem ainda utilizar as ferramentas tradicionais e decidiu compartilhar seus conhecimentos de design utilizando ferramentas de pintura digital para iniciantes.",
-                    "Ainda acha que os meios de desenho tradicionais são mais eficazes para a criatividade, por isso vem estimulando pessoas em suas redes sociais a fazer pintura em aquarela."
-                ],
+                    "Para você, a inovação é uma das forças que mantém os videogames em constante transformação."
+                ]
             },
+
             {
-                texto: "Criar uma imagem utilizando um gerador de imagem de IA.",
+                texto: "Uma experiência divertida e memorável.",
                 afirmacao: [
-                    "Acelerou o processo de criação de trabalhos utilizando geradores de imagem e agora consegue ensinar pessoas que sentem dificuldades em desenhar manualmente como utilizar também!",
-                    "Compartilhou artes em redes sociais como forma de ensinar como se comunicar através da arte.",
-                    "Percebeu que muitas pessoas têm dificuldade em expressar suas ideias desenhando e acha que a IA é capaz de empoderar essas pessoas a tirarem ideias do papel."
-                ],
-            },
+                    "Para você, a tecnologia pode mudar completamente, mas a capacidade de criar experiências marcantes continua sendo essencial."
+                ]
+            }
+
         ]
     }
+
 ];
