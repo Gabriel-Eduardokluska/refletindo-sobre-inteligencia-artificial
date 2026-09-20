@@ -1,82 +1,143 @@
-import { aleatorio, nome } from './aleatorio.js';
-import { perguntas } from './perguntas.js';
+import { embaralhar, nomeAventureiro } from "./aleatorio.js";
+import { perguntas } from "./perguntas.js";
 
 const caixaPrincipal = document.querySelector(".caixa-principal");
+const telaInicial = document.querySelector(".tela-inicial");
+const areaJogo = document.querySelector(".area-jogo");
+
 const caixaPerguntas = document.querySelector(".caixa-perguntas");
 const caixaAlternativas = document.querySelector(".caixa-alternativas");
+
 const caixaResultado = document.querySelector(".caixa-resultado");
 const textoResultado = document.querySelector(".texto-resultado");
-const botaoJogarNovamente = document.querySelector(".novamente-btn");
+
 const botaoIniciar = document.querySelector(".iniciar-btn");
-const telaInicial = document.querySelector(".tela-inicial");
+const botaoJogarNovamente = document.querySelector(".novamente-btn");
 
-let atual = 0;
-let perguntaAtual;
+const contadorPergunta = document.querySelector(".contador-pergunta");
+const barraProgresso = document.querySelector(".progresso");
+
+let perguntaAtual = 0;
 let historiaFinal = "";
+let perguntasDaPartida = [];
 
-botaoIniciar.addEventListener('click', iniciaJogo);
+botaoIniciar.addEventListener("click", iniciaJogo);
+
+botaoJogarNovamente.addEventListener("click", jogaNovamente);
+
 
 function iniciaJogo() {
-    atual = 0;
+
+    perguntaAtual = 0;
     historiaFinal = "";
-    telaInicial.style.display = 'none';
-    caixaPerguntas.classList.remove("mostrar");
-    caixaAlternativas.classList.remove("mostrar");
+
+    perguntasDaPartida = embaralhar(perguntas);
+
+    telaInicial.classList.add("esconder");
     caixaResultado.classList.remove("mostrar");
+    areaJogo.classList.add("mostrar");
+
     mostraPergunta();
 }
+
 
 function mostraPergunta() {
-    if (atual >= perguntas.length) {
+
+    if (perguntaAtual >= perguntasDaPartida.length) {
         mostraResultado();
         return;
     }
-    perguntaAtual = perguntas[atual];
-    caixaPerguntas.textContent = perguntaAtual.enunciado;
-    caixaAlternativas.textContent = "";
-    mostraAlternativas();
+
+    const pergunta = perguntasDaPartida[perguntaAtual];
+
+    caixaPerguntas.textContent = pergunta.enunciado;
+
+    contadorPergunta.textContent =
+        `Etapa ${perguntaAtual + 1} de ${perguntasDaPartida.length}`;
+
+    atualizaProgresso();
+
+    caixaAlternativas.innerHTML = "";
+
+    mostraAlternativas(pergunta);
 }
 
-function mostraAlternativas() {
-    for (const alternativa of perguntaAtual.alternativas) {
-        const botaoAlternativas = document.createElement("button");
-        botaoAlternativas.textContent = alternativa.texto;
-        botaoAlternativas.addEventListener("click", () => respostaSelecionada(alternativa));
-        caixaAlternativas.appendChild(botaoAlternativas);
-    }
+
+function mostraAlternativas(pergunta) {
+
+    const alternativas = embaralhar(pergunta.alternativas);
+
+    alternativas.forEach((alternativa) => {
+
+        const botao = document.createElement("button");
+
+        botao.classList.add("alternativa");
+
+        botao.textContent = alternativa.texto;
+
+        botao.addEventListener("click", () => {
+            respostaSelecionada(alternativa);
+        });
+
+        caixaAlternativas.appendChild(botao);
+    });
 }
+
 
 function respostaSelecionada(opcaoSelecionada) {
-    const afirmacoes = aleatorio(opcaoSelecionada.afirmacao);
-    historiaFinal += afirmacoes + " ";
-    if (opcaoSelecionada.proxima !== undefined) {
-        atual = opcaoSelecionada.proxima;
-    } else {
-        mostraResultado();
-        return;
-    }
+
+    const afirmacao =
+        opcaoSelecionada.afirmacao[
+            Math.floor(
+                Math.random() * opcaoSelecionada.afirmacao.length
+            )
+        ];
+
+    historiaFinal += afirmacao + " ";
+
+    perguntaAtual++;
+
     mostraPergunta();
 }
+
+
+function atualizaProgresso() {
+
+    const porcentagem =
+        (perguntaAtual / perguntasDaPartida.length) * 100;
+
+    barraProgresso.style.width = `${porcentagem}%`;
+}
+
 
 function mostraResultado() {
-    caixaPerguntas.textContent = `Em 2049, ${nome}`;
-    textoResultado.textContent = historiaFinal;
-    caixaAlternativas.textContent = "";
+
+    areaJogo.classList.remove("mostrar");
+
     caixaResultado.classList.add("mostrar");
-    botaoJogarNovamente.addEventListener("click", jogaNovamente);
+
+    barraProgresso.style.width = "100%";
+
+    textoResultado.textContent =
+        `${nomeAventureiro}, ${historiaFinal}`;
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
+
 
 function jogaNovamente() {
-    atual = 0;
+
+    perguntaAtual = 0;
     historiaFinal = "";
+
     caixaResultado.classList.remove("mostrar");
+
+    areaJogo.classList.add("mostrar");
+
+    perguntasDaPartida = embaralhar(perguntas);
+
     mostraPergunta();
 }
-
-function substituiNome() {
-    for (const pergunta of perguntas) {
-        pergunta.enunciado = pergunta.enunciado.replace(/você/g, nome);
-    }
-}
-
-substituiNome();
